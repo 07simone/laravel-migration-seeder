@@ -1,1 +1,11 @@
-//
+// 
+@import "~bootstrap/scss/bootstrap.scss";
+body{
+    background-image: url("https://image.slidesharecdn.com/fsitalianepianoindustriale20172026-170206143010/85/ferrovie-dello-stato-italiane-piano-industriale-2017-2026-40-320.jpg?cb=1486391644");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+    opacity: 0.8;
+    height: 100%;
+}
