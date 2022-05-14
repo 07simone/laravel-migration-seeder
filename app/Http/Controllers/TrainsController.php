@@ -12,7 +12,7 @@ class TrainsController extends Controller
         $trains = new Trains();
         $trains = $trains::all();
 
-        $time = Trains::where("orario_di_partenza", "=", "15:10:00")->get();
+        $time = Trains::where("orario_di_partenza", "<", "17:00:00")->get();
         return view('trains.index',["time" => $time, "trains" => $trains]);
     }
 }
