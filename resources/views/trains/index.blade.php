@@ -29,7 +29,7 @@
                     <p> e arriverà a destinazione alle ore: {{$train ->Orario_di_arrivo}}</p>
                     <p>Codice del treno è il seguente: {{$train ->Codice_treno}}</p>
                     <p>il numero delle carrozze è il seguente:{{$train ->Numero_Carrozze}}</p>
-                    <a href="{{url("/$train->id")}}">
+                    <a href="{{route("trains.show",$train->id)}}">
                         <button type="button" class="btn btn-success">Dettagli</button>
                     </a>
                 </div>

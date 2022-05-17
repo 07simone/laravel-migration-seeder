@@ -10,7 +10,7 @@ class TrainsController extends Controller
     //
     public function index(){
         $train = new Train();
-        $trains = $train::paginate(10);
+        $trains = $train::paginate(20);
        /*  $time = Trains::where("orario_di_partenza", "<", "17:00:00")->get(); */
         return view('trains.index',[/* "time" => $time, */ "trains" => $trains]);
     }
